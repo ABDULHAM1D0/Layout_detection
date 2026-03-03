@@ -14,7 +14,7 @@ st.write("Upload a document image and detect layout regions.")
 @st.cache_resource
 def load_model():
     return LayoutDetector("models/best.pt")
-
+# loading our model.
 detector = load_model()
 
 uploaded = st.file_uploader(
@@ -52,3 +52,4 @@ if uploaded:
 
         st.subheader("Detection Summary")
         st.dataframe(pd.DataFrame(data))
+
