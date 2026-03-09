@@ -8,7 +8,7 @@ st.set_page_config(
     layout="wide"
 )
 
-st.title("Document Layout Detection System")
+st.title("Document Layout Detection System.")
 st.write("Upload a document image and detect layout regions.")
 
 @st.cache_resource
@@ -52,4 +52,5 @@ if uploaded:
 
         st.subheader("Detection Summary")
         st.dataframe(pd.DataFrame(data))
+
 
